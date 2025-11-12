@@ -4,26 +4,27 @@ Official API docs: https://developers.cm.com/messaging/docs/email-introduction
 ## How to use the `emailgateway` package?
 ### Installation
 ```shell
-go get github.com/cmdotcom/email-sdk-golang/pkg/emailgateway
+go get github.com/cmdotcom/email-sdk-golang
 ```
 
 ### Initialize client
 ```go
 package main
 
-import "os"
 import (
-    os
-    emailgateway [TODO: Define repo]
+    "os"
+	
+    "github.com/cmdotcom/email-sdk-golang/emailgateway"
 )
 
 func main() {
 	client, err := emailgateway.NewClient(emailgateway.Config{
-	    ProductToken: os.Getenv("CM_EMAIL_GATEWAY_PRODUCT_TOKEN"),
+		ProductToken:                 "your-product-token",
+		DefaultTransactionalPriority: emailgateway.PriorityHigh,
 	})
 	if err != nil {
 		panic(err)
-    }
+	}
 }
 ```
 
