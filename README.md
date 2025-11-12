@@ -1,7 +1,9 @@
 # CM Email Gateway API Golang package
-Official API docs: https://developers.cm.com/messaging/docs/email-introduction
+Official API docs for Email Gateway API: https://developers.cm.com/messaging/docs/email-introduction
 
-## How to use the `emailgateway` package?
+## Using the `emailgateway` package
+[![Go Reference](https://pkg.go.dev/badge/github.com/cmdotcom/email-sdk-golang/emailgateway.svg)](https://pkg.go.dev/github.com/cmdotcom/email-sdk-golang/emailgateway)
+
 ### Installation
 ```shell
 go get github.com/cmdotcom/email-sdk-golang
